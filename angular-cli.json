@@ -1,7 +1,6 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "version": "1.1.0",
     "name": "angular-cli-exercise"
   },
   "apps": [
@@ -19,7 +18,6 @@
       "tsconfig": "tsconfig.app.json",
       "testTsconfig": "tsconfig.spec.json",
       "prefix": "app",
-      "mobile": false,
       "styles": [
         "styles.css"
       ],
@@ -33,8 +31,6 @@
       }
     }
   ],
-  "addons": [],
-  "packages": [],
   "e2e": {
     "protractor": {
       "config": "./protractor.conf.js"
@@ -57,11 +53,10 @@
     }
   },
   "defaults": {
-    "styleExt": "css",
+    "styleExt": "scss",
     "component": {
-      "inlineTemplate": false,
-      "spec": true
+      "spec": true,
+      "inlineTemplate": false
     }
   }
-
 }

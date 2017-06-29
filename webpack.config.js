@@ -117,17 +117,17 @@ module.exports = {
         "test": /\.(jpg|png|gif|otf|ttf|woff|woff2|cur|ani)$/,
         "loader": "url-loader?name=[name].[hash:20].[ext]&limit=10000"
       },
-      {
-        test: /\.scss$/,
-        use: [{
-            loader: "style-loader" // creates style nodes from JS strings
-          }, {
-            loader: "css-loader" // translates CSS into CommonJS
-          }, {
-            loader: "sass-loader" // compiles Sass to CSS
-          }
-        ]
-      },
+      // {
+      //   test: /\.scss$/,
+      //   use: [{
+      //       loader: "style-loader" // creates style nodes from JS strings
+      //     }, {
+      //       loader: "css-loader" // translates CSS into CommonJS
+      //     }, {
+      //       loader: "sass-loader" // compiles Sass to CSS
+      //     }
+      //   ]
+      // },
       {
         "exclude": [
           path.join(process.cwd(), "src/styles.css")
